@@ -65,7 +65,8 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^6.0.0",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.4",
+    "wrangler": "^4.59.2"
   },
   "engines": {
     "node": "^22.0.0"

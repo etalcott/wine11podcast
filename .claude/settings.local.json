@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const pkg = require\\('./node_modules/wrangler/package.json'\\); console.log\\(pkg.version\\)\")",
+      "Bash(pnpm add *)",
+      "Bash(which node *)",
+      "Read(//usr/local/bin/**)",
+      "Bash(npm install *)",
+      "Bash(git checkout *)"
+    ]
+  }
+}

@@ -2,29 +2,13 @@ import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
-import vercel from '@astrojs/vercel';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
-  adapter: vercel({
-    imageService: true,
-    imagesConfig: {
-      formats: ['image/avif'],
-      minimumCacheTTL: 3600,
-      remotePatterns: [
-        {
-          protocol: 'https'
-        },
-        {
-          protocol: 'http'
-        }
-      ],
-      sizes: [160, 320, 640, 1280]
-    },
-    webAnalytics: {
-      enabled: true
-    }
+  output: 'server',
+  adapter: cloudflare({
+    imageService: 'cloudflare'
   }),
   build: {
     inlineStylesheets: 'always'

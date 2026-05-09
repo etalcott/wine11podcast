@@ -76,7 +76,8 @@
   "packageManager": "pnpm@10.27.0",
   "pnpm": {
     "overrides": {
-      "fast-xml-parser": "4.5.4"
+      "fast-xml-parser": "4.5.4",
+      "vite": "^5.4.11"
     },
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",

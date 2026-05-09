@@ -38,7 +38,6 @@ export async function getShowInfo() {
     return showInfoCache;
   }
 
-  // @ts-expect-error
   const showInfo = (await parseFeed(starpodConfig.rssFeed)) as Show;
   showInfo.image = (await optimizeImage(showInfo.image, {
     height: 640,
@@ -77,7 +76,6 @@ export async function getAllEpisodes() {
     )
   });
 
-  // @ts-expect-error
   let feed = (await parseFeed(starpodConfig.rssFeed)) as Show;
   let items = parse(FeedSchema, feed).items;
 

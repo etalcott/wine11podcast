@@ -1,4 +1,4 @@
-import { defineConfig, fontProviders } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
@@ -32,24 +32,24 @@ export default defineConfig({
   experimental: {
     clientPrerender: true
   },
-  fonts: [
-    {
-      provider: fontProviders.google(),
-      name: 'Inter',
-      cssVariable: '--astro-font-inter',
-      formats: ['woff2'],
-      styles: ['normal'],
-      subsets: ['latin'],
-      weights: ['300 900'],
-      options: {
-        experimental: {
-          variableAxis: {
-            opsz: ['14..32']
-          }
-        }
-      }
-    }
-  ],
+  // fonts: [
+  //   {
+  //     provider: fontProviders.google(),
+  //     name: 'Inter',
+  //     cssVariable: '--astro-font-inter',
+  //     formats: ['woff2'],
+  //     styles: ['normal'],
+  //     subsets: ['latin'],
+  //     weights: ['300 900'],
+  //     options: {
+  //       experimental: {
+  //         variableAxis: {
+  //           opsz: ['14..32']
+  //         }
+  //       }
+  //     }
+  //   }
+  // ],
   image: {
     remotePatterns: [
       {

@@ -23,7 +23,7 @@
     "test:unit": "vitest"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^11.0.0",
+    "@astrojs/cloudflare": "^12.1.1",
     "@astrojs/preact": "^4.0.0",
     "@astrojs/vercel": "^10.0.4",
     "@libsql/client": "^0.17.2",

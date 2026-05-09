@@ -18,11 +18,16 @@ import sponsors from './data/sponsors';
 import sponsorsPerEpisode from './data/sponsors-per-episode';
 
 const db = createDb(
-  process.env.ASTRO_DB_REMOTE_URL!,
-  process.env.ASTRO_DB_APP_TOKEN!
+  process.env.ASTRO_DB_REMOTE_URL,
+  process.env.ASTRO_DB_APP_TOKEN
 );
 
 async function seed() {
+  if (!db) {
+    console.error('ASTRO_DB_REMOTE_URL must be set to run the seed script');
+    process.exit(1);
+  }
+
   await db
     .insert(Person)
     .values(people as any)

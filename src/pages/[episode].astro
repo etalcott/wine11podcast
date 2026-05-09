@@ -61,7 +61,7 @@ const db = createDb(
   import.meta.env.ASTRO_DB_APP_TOKEN
 );
 
-const hostsAndGuests = await db
+const hostsAndGuests = db ? await db
   .select({
     id: Person.id,
     img: Person.img,
@@ -71,9 +71,9 @@ const hostsAndGuests = await db
   .from(HostOrGuest)
   .innerJoin(DbEpisode, eq(HostOrGuest.episodeSlug, DbEpisode.episodeSlug))
   .innerJoin(Person, eq(HostOrGuest.personId, Person.id))
-  .where(eq(DbEpisode.episodeSlug, episode.episodeSlug));
+  .where(eq(DbEpisode.episodeSlug, episode.episodeSlug)) : [];
 
-const sponsors = await db
+const sponsors = db ? await db
   .select({
     id: Sponsor.id,
     img: Sponsor.img,
@@ -86,7 +86,7 @@ const sponsors = await db
     eq(SponsorForEpisode.episodeSlug, DbEpisode.episodeSlug)
   )
   .innerJoin(Sponsor, eq(SponsorForEpisode.sponsorId, Sponsor.id))
-  .where(eq(DbEpisode.episodeSlug, episode.episodeSlug));
+  .where(eq(DbEpisode.episodeSlug, episode.episodeSlug)) : [];
 
 const title = `${episode.title} - ${show.title} - Episode ${episode.episodeNumber}`;
 ---

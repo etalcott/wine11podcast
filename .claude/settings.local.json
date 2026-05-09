@@ -8,7 +8,11 @@
       "Bash(npm install *)",
       "Bash(git checkout *)",
       "Bash(node -e \"const m = require\\('g:/Git-Projects/wine11podcast/node_modules/rss-to-json'\\); console.log\\(Object.keys\\(m\\)\\)\")",
-      "Bash(node -e \"import\\('g:/Git-Projects/wine11podcast/node_modules/rss-to-json/src/index.js'\\).then\\(m => console.log\\(Object.keys\\(m\\)\\)\\)\")"
+      "Bash(node -e \"import\\('g:/Git-Projects/wine11podcast/node_modules/rss-to-json/src/index.js'\\).then\\(m => console.log\\(Object.keys\\(m\\)\\)\\)\")",
+      "Bash(pnpm build *)",
+      "PowerShell(Get-Command pnpm -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "PowerShell(npm install -g pnpm)"
     ]
   }
 }

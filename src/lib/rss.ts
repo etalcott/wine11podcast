@@ -1,5 +1,5 @@
 import { htmlToText } from 'html-to-text';
-import parseFeed from 'rss-to-json';
+import { parse as parseFeed } from 'rss-to-json';
 import { array, number, object, optional, parse, string } from 'valibot';
 
 import { optimizeImage } from './optimize-episode-image';
@@ -39,7 +39,7 @@ export async function getShowInfo() {
   }
 
   // @ts-expect-error
-  const showInfo = (await parseFeed.parse(starpodConfig.rssFeed)) as Show;
+  const showInfo = (await parseFeed(starpodConfig.rssFeed)) as Show;
   showInfo.image = (await optimizeImage(showInfo.image, {
     height: 640,
     width: 640
@@ -78,7 +78,7 @@ export async function getAllEpisodes() {
   });
 
   // @ts-expect-error
-  let feed = (await parseFeed.parse(starpodConfig.rssFeed)) as Show;
+  let feed = (await parseFeed(starpodConfig.rssFeed)) as Show;
   let items = parse(FeedSchema, feed).items;
 
   let episodes: Array<Episode> = await Promise.all(

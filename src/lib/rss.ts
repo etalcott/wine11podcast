@@ -1,5 +1,5 @@
 import { htmlToText } from 'html-to-text';
-import { parse as parseFeed } from 'rss-to-json';
+import parseFeed from 'rss-to-json';
 import { array, number, object, optional, parse, string } from 'valibot';
 
 import { optimizeImage } from './optimize-episode-image';

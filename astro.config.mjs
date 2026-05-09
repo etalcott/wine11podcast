@@ -44,7 +44,7 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: 'viewport'
   },
-  site: 'https://whiskey.fm',
+  site: 'https://wineonone.fm',
   trailingSlash: 'never',
   integrations: [
     preact(),

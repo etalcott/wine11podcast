@@ -67,9 +67,7 @@ async function seed() {
           isHost:
             person.host !== undefined
               ? Boolean(person.host)
-              : ['argyleink', 'chuckcarpenter', 'robbiethewagner'].includes(
-                  person.id
-                ),
+              : ['jennifer', 'erin', 'lisa'].includes(person.id),
           personId: person.id
         });
       }

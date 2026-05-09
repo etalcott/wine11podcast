@@ -1,4 +1,7 @@
 export const people = [
+  { id: 'jennifer', name: 'Jennifer', img: 'jennifer.jpg' },
+  { id: 'erin', name: 'Erin', img: 'erin.jpg' },
+  { id: 'lisa', name: 'Lisa', img: 'lisa.jpg' },
   { id: 'aarondfrancis', name: 'Aaron Francis', img: 'aarondfrancis.jpg' },
   { id: 'adamrackis', name: 'Adam Rackis', img: 'adamrackis.jpg' },
   { id: 'adamstac', name: 'Adam Stacoviak', img: 'adamstac.jpg' },

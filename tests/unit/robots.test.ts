@@ -7,7 +7,7 @@ describe('Robots.txt', () => {
   let robotsTxt: string;
 
   beforeEach(() => {
-    mockSite = new URL('https://whiskey.fm');
+    mockSite = new URL('https://wineonone.fm');
     mockSitemap = new URL('sitemap-index.xml', mockSite);
     robotsTxt = getRobotsTxt(mockSitemap, mockSite);
   });
@@ -20,7 +20,7 @@ describe('Robots.txt', () => {
     });
 
     it('should include sitemap reference', () => {
-      expect(robotsTxt).toContain('Sitemap: https://whiskey.fm/sitemap-index.xml');
+      expect(robotsTxt).toContain('Sitemap: https://wineonone.fm/sitemap-index.xml');
     });
 
     it('should reference LLM-specific resources', () => {

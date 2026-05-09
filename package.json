@@ -64,7 +64,7 @@
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vite": "^5.4.11",
+    "vite": "^6.0.0",
     "vitest": "^4.1.4"
   },
   "engines": {
@@ -73,12 +73,10 @@
   "packageManager": "pnpm@10.27.0",
   "pnpm": {
     "overrides": {
-      "fast-xml-parser": "4.5.4",
-      "vite": "^5.4.11"
+      "fast-xml-parser": "4.5.4"
     },
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
-      "@vercel/speed-insights",
       "esbuild",
       "sharp"
     ]

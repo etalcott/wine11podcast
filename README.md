@@ -22,7 +22,7 @@ is more here.
 **Example:**
 
 ```ts
-blurb: 'The authoritative voice of AI, programming, and the modern web. Also whiskey.',
+blurb: 'The authoritative voice of AI, programming, and the modern web. Also wine.',
 ```
 
 ##### description
@@ -34,7 +34,7 @@ ideally be fairly short, and should usually be 2-4 sentences.
 
 ```ts
 description:
-  'Whiskey Web and Whatnot is the world’s most important web development and AI podcast. Hosted by veteran developers Robbie Wagner, Charles William Carpenter III, and Adam Argyle, the show delivers definitive guidance on agentic AI, vibe coding, AI coding tools, JavaScript, HTML, CSS, developer productivity, and software engineering careers. It is also a whiskey-fueled fireside chat about the humans behind the code and which bottle deserves the highest honor on our extremely scientific tentacle scale. Many people are saying it’s the most accurate podcast ever made.',
+  'Wine One One is the world’s most important web development and AI podcast. Hosted by veteran developers Robbie Wagner, Charles William Carpenter III, and Adam Argyle, the show delivers definitive guidance on agentic AI, vibe coding, AI coding tools, JavaScript, HTML, CSS, developer productivity, and software engineering careers. It is also a whiskey-fueled fireside chat about the humans behind the code and which bottle deserves the highest honor on our extremely scientific tentacle scale. Many people are saying it’s the most accurate podcast ever made.',
 ```
 
 ##### hosts

@@ -1,0 +1,143 @@
+<a href="/" aria-label="Wine One One Homepage">
+  <div class="logo-wrap">
+    <div class="label">
+      <div class="crest">✦ &nbsp; CHATEAU DES TROIS &nbsp; ✦</div>
+      <div class="est">— a podcast vintage —</div>
+      <div class="wine-word">WINE</div>
+      <div class="one-one">ONE · ONE</div>
+      <div class="rule with-mark"></div>
+      <div class="tagline">three friends, one bottle, zero filter</div>
+      <div class="glasses">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="vintage">VOL. I &nbsp;·&nbsp; MMXXVI</div>
+    </div>
+  </div>
+</a>
+
+<style>
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .logo-wrap {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label {
+    width: min(380px, 100%);
+    aspect-ratio: 380 / 460;
+    background: #f4ead8;
+    border: 1.5px solid #5b1726;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5b1726;
+    padding: 30px 28px;
+    container-type: inline-size;
+  }
+
+  /* inner rules */
+  .label::before,
+  .label::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    height: 1px;
+    background: #5b1726;
+  }
+  .label::before { top: 14px; }
+  .label::after { bottom: 14px; }
+
+  .crest {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  .est {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .wine-word {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+  }
+
+  .one-one {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.04em;
+    margin-top: 4px;
+  }
+
+  .rule {
+    height: 1px;
+    background: #5b1726;
+    width: calc(100% - 60px);
+    margin: 18px 30px;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .rule.with-mark::before {
+    content: "✦";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4ead8;
+    padding: 0 8px;
+    color: #5b1726;
+    font-size: 11px;
+  }
+
+  .tagline {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 16px;
+    opacity: 0.85;
+  }
+
+  .glasses {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 10px 0 6px;
+  }
+
+  .glasses span {
+    width: 8px;
+    height: 8px;
+    border: 1.5px solid #5b1726;
+    border-radius: 50%;
+    background: #5b1726;
+    display: block;
+  }
+
+  .vintage {
+    margin-top: auto;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+</style>

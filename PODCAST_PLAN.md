@@ -10,6 +10,8 @@
 
 Wine 11 is real talk on friendship, beauty, luxury, motherhood, midlife, and everything we only say after a pour.
 
+Website is: http://wine11podcast.com/
+another good available option would be wineoneone.show
 ---
 
 ## Episode Format (30–40 minutes)

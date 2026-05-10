@@ -3,15 +3,20 @@ import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
+
   build: {
     inlineStylesheets: 'always'
   },
+
   experimental: {
     clientPrerender: true
   },
+
   // fonts: [
   //   {
   //     provider: fontProviders.google(),
@@ -40,12 +45,15 @@ export default defineConfig({
       }
     ]
   },
+
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'viewport'
   },
+
   site: 'https://wineonone.fm',
   trailingSlash: 'never',
+
   integrations: [
     preact(),
     sitemap({
@@ -56,8 +64,11 @@ export default defineConfig({
       }
     })
   ],
+
   // These were specific redirects we needed for our podcast, if you do not have any routes to redirect, you can safely remove this.
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  adapter: cloudflare()
 });

@@ -1,14 +1,21 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "esModuleInterop": true,
-    "strictNullChecks": true,
-    "verbatimModuleSyntax": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "scripts"]
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"strictNullChecks": true,
+		"verbatimModuleSyntax": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact"
+	},
+	"include": [
+		".astro/types.d.ts",
+		"**/*",
+		"./worker-configuration.d.ts"
+	],
+	"exclude": [
+		"dist",
+		"scripts"
+	]
 }
